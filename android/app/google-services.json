@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "604746874937",
+    "project_id": "floralgardenqatar-6fb8e",
+    "storage_bucket": "floralgardenqatar-6fb8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604746874937:android:3089710a68ae8ccc478de8",
+        "android_client_info": {
+          "package_name": "online.digistacks.floralgarden"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604746874937-1mcs1b5aomhr6enkt2enq1trijih7gp9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF45NZWQj9nT3pBJNleutJFRkDsEUOmso"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604746874937-1mcs1b5aomhr6enkt2enq1trijih7gp9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "604746874937-tk3g7bci216m7ukubfiipbuopahtme5k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "online.digistacks.floralgarden"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
