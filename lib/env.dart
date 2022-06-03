@@ -16,7 +16,7 @@ Map<String, dynamic> environment =
 },
 "storeIdentifier":{
 "disable":true,
-"android":"com.inspireui.fluxstore",
+"android":"online.digistacks.floralgarden",
 "ios":"1469772800"
 },
 "advanceConfig":{
@@ -857,7 +857,7 @@ Map<String, dynamic> environment =
 //   },
 //   "storeIdentifier": {
 //     "disable": true,
-//     "android": "com.inspireui.fluxstore",
+//     "android": "online.digistacks.floralgarden",
 //     "ios": "1469772800"
 //   },
 //   "advanceConfig": {
@@ -1217,7 +1217,7 @@ Map<String, dynamic> environment =
 //     //The link your app will open
 //     "link": "https://mstore.io/",
 //     //----------* Android Setting *----------//
-//     "androidPackageName": "com.inspireui.fluxstore",
+//     "androidPackageName": "online.digistacks.floralgarden",
 //     "androidAppMinimumVersion": 1,
 //     //----------* iOS Setting *----------//
 //     "iOSBundleId": "com.inspireui.mstore.flutter",

@@ -1,4 +1,4 @@
-package com.inspireui.fluxstore
+package online.digistacks.floralgarden
 
 import android.app.NotificationManager
 import android.content.Context
