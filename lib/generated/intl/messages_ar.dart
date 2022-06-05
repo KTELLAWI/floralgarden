@@ -422,7 +422,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "fileUploadFailed":
             MessageLookupByLibrary.simpleMessage("فشل تحميل الملف!"),
         "files": MessageLookupByLibrary.simpleMessage("ملفات"),
-        "filter": MessageLookupByLibrary.simpleMessage("منقي"),
+        "filter": MessageLookupByLibrary.simpleMessage("فلتر"),
         "finishSetup": MessageLookupByLibrary.simpleMessage("إنهاء الإعداد"),
         "finnish": MessageLookupByLibrary.simpleMessage("اللغة الفنلندية"),
         "firstComment": MessageLookupByLibrary.simpleMessage(

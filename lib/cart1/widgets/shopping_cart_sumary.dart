@@ -179,39 +179,7 @@ class _ShoppingCartSummaryState extends State<ShoppingCartSummary> {
               if (enableCoupon)
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 15.0),
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                   //color: Colors.white,
-                   decoration: BoxDecoration(
-                borderRadius:
-                    BorderRadius.circular(20),
-               // color:Colors.blue, //Theme.of(context).backgroundColor,
-                color: Theme.of(context).backgroundColor ,
-                    border: Border.all(
-                    color: const Color(0xff91b375),
-                    width: 0,
-                  ),
-                boxShadow: [
-                  BoxShadow(
-                    color: const Color(0xff91b375),//Colors.black,
-                    offset: Offset(2.0, 2.0), 
-                    //offset: Offset(1.0, 1.8), //(x,y)
-                    blurRadius: 4.0,
-                  ),
-                ],
-                // boxShadow: [
-                //   if (widget.config.boxShadow != null)
-                //     BoxShadow(
-                //       color: Colors.green,
-                //       offset: Offset(
-                //         widget.config.boxShadow?.x ?? 0.0,
-                //         widget.config.boxShadow?.y ?? 0.0,
-                //       ),
-                //       blurRadius: widget.config.boxShadow?.blurRadius ?? 0.0,
-                //     ),
-                // ],
-              ),
-                 child:  Row(
+                  child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       Expanded(
@@ -302,8 +270,6 @@ class _ShoppingCartSummaryState extends State<ShoppingCartSummary> {
                       )
                     ],
                   ),
-                 ),
-                
                 ),
               if (isApplyCouponSuccess)
                 Padding(
@@ -325,38 +291,8 @@ class _ShoppingCartSummaryState extends State<ShoppingCartSummary> {
                   vertical: 10.0,
                 ),
                 child: Container(
-                   decoration: BoxDecoration(
-                borderRadius:
-                    BorderRadius.circular(20),
-               // color:Colors.blue, //Theme.of(context).backgroundColor,
-                color: Theme.of(context).backgroundColor,
-                    border: Border.all(
-                    color: const Color(0xff91b375),
-                    width: 0,
-                  ),
-                boxShadow: [
-                  BoxShadow(
-                    color: const Color(0xff91b375),//Colors.black,
-                    offset: Offset(2.0, 2.0), 
-                    //offset: Offset(1.0, 1.8), //(x,y)
-                    blurRadius: 4.0,
-                  ),
-                ],
-                // boxShadow: [
-                //   if (widget.config.boxShadow != null)
-                //     BoxShadow(
-                //       color: Colors.green,
-                //       offset: Offset(
-                //         widget.config.boxShadow?.x ?? 0.0,
-                //         widget.config.boxShadow?.y ?? 0.0,
-                //       ),
-                //       blurRadius: widget.config.boxShadow?.blurRadius ?? 0.0,
-                //     ),
-                // ],
-              ),
-
-                  // decoration:
-                  //     BoxDecoration(color: Theme.of(context).primaryColorLight),
+                  decoration:
+                      BoxDecoration(color: Theme.of(context).primaryColorLight),
                   child: Padding(
                     padding: const EdgeInsets.symmetric(
                       vertical: 12.0,

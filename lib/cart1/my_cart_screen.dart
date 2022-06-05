@@ -328,37 +328,10 @@ class _MyCartState extends State<MyCart> with SingleTickerProviderStateMixin {
                               children: <Widget>[
                                 const SizedBox(height: 16.0),
                                 if (totalCartQuantity > 0)
-                                Container(
-                                   padding:const EdgeInsets.all(5),
-                        decoration: BoxDecoration(
-                borderRadius:
-                    BorderRadius.circular(20),
-               // color:Colors.blue, //Theme.of(context).backgroundColor,
-                color: Theme.of(context).backgroundColor,//Colors.white,
-                    border: Border.all(
-                    color: const Color(0xff91b375),
-                    width: 0,
-                  ),
-                boxShadow: [
-                  BoxShadow(
-                    color: const Color(0xff05dae5),//Colors.black,
-                    offset: Offset(2.0, 2.0), 
-                    //offset: Offset(1.0, 1.8), //(x,y)
-                    blurRadius: 4.0,
-                  ),
-                ],
-              
-              ),
-                                   margin: const EdgeInsets.all(15.0),
-                                   //color:Colors.white,
-                                   child:
-                                
                                   Column(
                                     children: createShoppingCartRows(
                                         cartModel, context),
                                   ),
-                                ),
-                                
                                 const ShoppingCartSummary(),
                                 if (totalCartQuantity == 0) EmptyCart(),
                                 if (errMsg.isNotEmpty)

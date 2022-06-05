@@ -349,46 +349,47 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                               },
                               child: Row(
                                 children: <Widget>[
-                                  Checkbox(
-                                    value: isChecked,
-                                    activeColor: Theme.of(context).primaryColor,
-                                    checkColor: Colors.white,
-                                    onChanged: (value) {
-                                      isChecked = !isChecked;
-                                      setState(() {});
-                                    },
-                                  ),
-                                  Expanded(
-                                    child: RichText(
-                                      maxLines: 2,
-                                      text: TextSpan(
-                                        text: S.of(context).iAgree,
-                                        style: Theme.of(context)
-                                            .textTheme
-                                            .bodyText1,
-                                        children: <TextSpan>[
-                                          const TextSpan(text: ' '),
-                                          TextSpan(
-                                            text:
-                                                S.of(context).agreeWithPrivacy,
-                                            style: TextStyle(
-                                                color: Theme.of(context)
-                                                    .primaryColor,
-                                                decoration:
-                                                    TextDecoration.underline),
-                                            recognizer: TapGestureRecognizer()
-                                              ..onTap = () => Navigator.push(
-                                                    context,
-                                                    MaterialPageRoute(
-                                                      builder: (context) =>
-                                                          PrivacyScreen(),
-                                                    ),
-                                                  ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
+                                  // Checkbox(
+                                  //   value: isChecked,
+                                  //   activeColor: Theme.of(context).primaryColor,
+                                  //   checkColor: Colors.white,
+                                  //   onChanged: (value) {
+                                  //     isChecked = !isChecked;
+                                  //     setState(() {});
+                                  //   },
+                                  // ),
+                                  // Expanded(
+                                  //   child: RichText(
+                                  //     maxLines: 2,
+                                  //     text: TextSpan(
+                                  //       text: S.of(context).iAgree,
+                                  //       style: Theme.of(context)
+                                  //           .textTheme
+                                  //           .bodyText1,
+                                  //       children: <TextSpan>[
+                                  //         const TextSpan(text: ' '),
+                                  //         TextSpan(
+                                  //           text:
+                                  //               S.of(context).agreeWithPrivacy,
+                                  //           style: TextStyle(
+                                  //               color: Theme.of(context)
+                                  //                   .primaryColor,
+                                  //               decoration:
+                                  //                   TextDecoration.underline),
+                                  //           recognizer: TapGestureRecognizer()
+                                  //             ..onTap = () =>{}
+                                  //             //  Navigator.push(
+                                  //             //       context,
+                                  //             //       MaterialPageRoute(
+                                  //             //         builder: (context) =>
+                                  //             //             PrivacyScreen(),
+                                  //             //       ),
+                                  //             //     ),
+                                  //         ),
+                                  //       ],
+                                  //     ),
+                                  //   ),
+                                  // ),
                                 ],
                               ),
                             ),
@@ -495,8 +496,7 @@ class PrivacyScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
-          child: Text(
-            S.of(context).privacyTerms,
+          child: Text("",
             style: const TextStyle(fontSize: 16.0, height: 1.4),
             textAlign: TextAlign.justify,
           ),

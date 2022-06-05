@@ -1,8 +1,11 @@
 Map<String, dynamic> environment = 
 {
-"appConfig":"lib/config/config_en.json",
-"serverConfig":{
-"url":"https://floralgardenqatar.com/",
+  "appConfig": "https://floralgardenqatar.com/wp-content/uploads/flutter_config_files/config_en.json",//"lib/config/config_en.json",
+
+  /// ➡️ lib/common/config.dart
+  "serverConfig": {
+    'type': 'woo',
+    'url': 'https://floralgardenqatar.com/',
 "type":"woo",
 "consumerKey":"ck_6ece1a021724ab73f2cabf327a9ec518a841d3e5",
 "consumerSecret":"cs_039d43ef24421b943abe36ee7bfab982d44ed2e8"
@@ -17,7 +20,7 @@ Map<String, dynamic> environment =
 "storeIdentifier":{
 "disable":true,
 "android":"online.digistacks.floralgarden",
-"ios":"1469772800"
+"ios":""
 },
 "advanceConfig":{
 "DefaultLanguage":"en",
@@ -37,11 +40,11 @@ Map<String, dynamic> environment =
 "kIsResizeImage":false,
 "httpCache":true,
 "DefaultCurrency":{
-"symbol":"\$",
+"symbol":"QAR",
 "decimalDigits":2,
 "symbolBeforeTheNumber":true,
-"currency":"USD",
-"currencyCode":"usd",
+"currency":"QAR",
+"currencyCode":"QAR",
 "smallestUnitRate":100
 },
 "Currencies":[
@@ -102,24 +105,24 @@ Map<String, dynamic> environment =
 "EnableFirebase":true,
 "RatioProductImage":1.2,
 "EnableCouponCode":true,
-"ShowCouponList":true,
-"ShowAllCoupons":true,
-"ShowExpiredCoupons":true,
+"ShowCouponList":false,
+"ShowAllCoupons":false,
+"ShowExpiredCoupons":false,
 "AlwaysShowTabBar":false,
 "PrivacyPoliciesPageId":25569,
-"PrivacyPoliciesPageUrl":"https://mstore.io/",
-"SupportPageUrl":"https://support.inspireui.com/",
-"DownloadPageUrl":"https://mstore.io/#download",
+"PrivacyPoliciesPageUrl":"https://floralgardenqatar.com/",
+"SupportPageUrl":"https://floralgardenqatar.com/",
+"DownloadPageUrl":"https://floralgardenqatar.com/",
 "SocialConnectUrl":[
 {
 "name":"Facebook",
 "icon":"assets/icons/logins/facebook.png",
-"url":"https://www.facebook.com/inspireui"
+"url":"https://www.facebook.com"
 },
 {
 "name":"Instagram",
 "icon":"assets/icons/logins/instagram.png",
-"url":"https://www.instagram.com/inspireui9/"
+"url":"https://www.instagram.com"
 }
 ],
 "AutoDetectLanguage":false,
@@ -176,18 +179,22 @@ Map<String, dynamic> environment =
 }
 ]
 },
-"defaultSettings":["products",
-"chat",
-"wishlist",
+"defaultSettings":[
+// "products",
+// "chat",
+
 "notifications",
 "language",
-"currencies",
 "darkTheme",
+"wishlist",
+// "currencies",
+
 "order",
-"point",
+// "point",
 "rating",
-"privacy",
-"about"],
+// "privacy",
+// "about"
+],
 "loginSetting":{
 "IsRequiredLogin":false,
 "showAppleLogin":true,
@@ -197,29 +204,29 @@ Map<String, dynamic> environment =
 "showPhoneNumberWhenRegister":true,
 "requirePhoneNumberWhenRegister":true,
 "isResetPasswordSupported":true,
-"facebookAppId":"430258564493822",
-"facebookLoginProtocolScheme":"fb430258564493822"
+"facebookAppId":"",
+"facebookLoginProtocolScheme":""
 },
 "oneSignalKey":{
 "enable":false,
 "appID":"8b45b6db-7421-45e1-85aa-75e597f62714"
 },
 "onBoardingData":[
-{
-"title":"Welcome to FluxStore",
-"image":"assets/images/fogg-delivery-1.png",
-"desc":"Fluxstore is on the way to serve you. "
-},
-{
-"title":"Connect Surrounding World",
-"image":"assets/images/fogg-uploading-1.png",
-"desc":"See all things happening around you just by a click in your phone. Fast, convenient and clean."
-},
-{
-"title":"Let's Get Started",
-"image":"assets/images/fogg-order-completed.png",
-"desc":"Waiting no more, let's see what we get!"
-}
+// {
+// "title":"Welcome to FluxStore",
+// "image":"assets/images/fogg-delivery-1.png",
+// "desc":"Fluxstore is on the way to serve you. "
+// },
+// {
+// "title":"Connect Surrounding World",
+// "image":"assets/images/fogg-uploading-1.png",
+// "desc":"See all things happening around you just by a click in your phone. Fast, convenient and clean."
+// },
+// {
+// "title":"Let's Get Started",
+// "image":"assets/images/fogg-order-completed.png",
+// "desc":"Waiting no more, let's see what we get!"
+// }
 ],
 "adConfig":{
 "enable":false,
@@ -292,27 +299,27 @@ Map<String, dynamic> environment =
 "text":"English",
 "storeViewCode":""
 },
-{
-"name":"Hindi",
-"icon":"assets/images/country/in.png",
-"code":"hi",
-"text":"Hindi",
-"storeViewCode":"hi"
-},
-{
-"name":"Spanish",
-"icon":"assets/images/country/es.png",
-"code":"es",
-"text":"Spanish",
-"storeViewCode":""
-},
-{
-"name":"French",
-"icon":"assets/images/country/fr.png",
-"code":"fr",
-"text":"French",
-"storeViewCode":"fr"
-},
+// {
+// "name":"Hindi",
+// "icon":"assets/images/country/in.png",
+// "code":"hi",
+// "text":"Hindi",
+// "storeViewCode":"hi"
+// },
+// {
+// "name":"Spanish",
+// "icon":"assets/images/country/es.png",
+// "code":"es",
+// "text":"Spanish",
+// "storeViewCode":""
+// },
+// {
+// "name":"French",
+// "icon":"assets/images/country/fr.png",
+// "code":"fr",
+// "text":"French",
+// "storeViewCode":"fr"
+// },
 {
 "name":"Arabic",
 "icon":"assets/images/country/ar.png",
@@ -320,277 +327,277 @@ Map<String, dynamic> environment =
 "text":"Arabic",
 "storeViewCode":"ar"
 },
-{
-"name":"Russian",
-"icon":"assets/images/country/ru.png",
-"code":"ru",
-"text":"Русский",
-"storeViewCode":"ru"
-},
-{
-"name":"Indonesian",
-"icon":"assets/images/country/id.png",
-"code":"id",
-"text":"Indonesian",
-"storeViewCode":"id"
-},
-{
-"name":"Japanese",
-"icon":"assets/images/country/ja.png",
-"code":"ja",
-"text":"Japanese",
-"storeViewCode":""
-},
-{
-"name":"Korean",
-"icon":"assets/images/country/ko.png",
-"code":"ko",
-"text":"Korean",
-"storeViewCode":"ko"
-},
-{
-"name":"Vietnamese",
-"icon":"assets/images/country/vn.png",
-"code":"vi",
-"text":"Vietnam",
-"storeViewCode":""
-},
-{
-"name":"Romanian",
-"icon":"assets/images/country/ro.png",
-"code":"ro",
-"text":"Romanian",
-"storeViewCode":"ro"
-},
-{
-"name":"Turkish",
-"icon":"assets/images/country/tr.png",
-"code":"tr",
-"text":"Turkish",
-"storeViewCode":"tr"
-},
-{
-"name":"Italian",
-"icon":"assets/images/country/it.png",
-"code":"it",
-"text":"Italian",
-"storeViewCode":"it"
-},
-{
-"name":"German",
-"icon":"assets/images/country/de.png",
-"code":"de",
-"text":"German",
-"storeViewCode":"de"
-},
-{
-"name":"Portuguese",
-"icon":"assets/images/country/pt.png",
-"code":"pt",
-"text":"Portuguese",
-"storeViewCode":"pt"
-},
-{
-"name":"Hungarian",
-"icon":"assets/images/country/hu.png",
-"code":"hu",
-"text":"Hungarian",
-"storeViewCode":"hu"
-},
-{
-"name":"Hebrew",
-"icon":"assets/images/country/he.png",
-"code":"he",
-"text":"Hebrew",
-"storeViewCode":"he"
-},
-{
-"name":"Thai",
-"icon":"assets/images/country/th.png",
-"code":"th",
-"text":"Thai",
-"storeViewCode":"th"
-},
-{
-"name":"Dutch",
-"icon":"assets/images/country/nl.png",
-"code":"nl",
-"text":"Dutch",
-"storeViewCode":"nl"
-},
-{
-"name":"Serbian",
-"icon":"assets/images/country/sr.jpeg",
-"code":"sr",
-"text":"Serbian",
-"storeViewCode":"sr"
-},
-{
-"name":"Polish",
-"icon":"assets/images/country/pl.png",
-"code":"pl",
-"text":"Polish",
-"storeViewCode":"pl"
-},
-{
-"name":"Persian",
-"icon":"assets/images/country/fa.png",
-"code":"fa",
-"text":"Persian",
-"storeViewCode":""
-},
-{
-"name":"Ukrainian",
-"icon":"assets/images/country/uk.png",
-"code":"uk",
-"text":"Ukrainian",
-"storeViewCode":""
-},
-{
-"name":"Bengali",
-"icon":"assets/images/country/bn.png",
-"code":"bn",
-"text":"Bengali",
-"storeViewCode":""
-},
-{
-"name":"Tamil",
-"icon":"assets/images/country/ta.png",
-"code":"ta",
-"text":"Tamil",
-"storeViewCode":""
-},
-{
-"name":"Kurdish",
-"icon":"assets/images/country/ku.png",
-"code":"ku",
-"text":"Kurdish",
-"storeViewCode":""
-},
-{
-"name":"Czech",
-"icon":"assets/images/country/cs.png",
-"code":"cs",
-"text":"Czech",
-"storeViewCode":"cs"
-},
-{
-"name":"Swedish",
-"icon":"assets/images/country/sv.png",
-"code":"sv",
-"text":"Swedish",
-"storeViewCode":""
-},
-{
-"name":"Finland",
-"icon":"assets/images/country/fi.png",
-"code":"fi",
-"text":"Finland",
-"storeViewCode":""
-},
-{
-"name":"Greek",
-"icon":"assets/images/country/el.png",
-"code":"el",
-"text":"Greek",
-"storeViewCode":""
-},
-{
-"name":"Khmer",
-"icon":"assets/images/country/km.png",
-"code":"km",
-"text":"Khmer",
-"storeViewCode":""
-},
-{
-"name":"Kannada",
-"icon":"assets/images/country/kn.png",
-"code":"kn",
-"text":"Kannada",
-"storeViewCode":""
-},
-{
-"name":"Marathi",
-"icon":"assets/images/country/mr.jpeg",
-"code":"mr",
-"text":"Marathi",
-"storeViewCode":""
-},
-{
-"name":"Malay",
-"icon":"assets/images/country/ms.jpeg",
-"code":"ms",
-"text":"Malay",
-"storeViewCode":""
-},
-{
-"name":"Bosnian",
-"icon":"assets/images/country/bs.png",
-"code":"bs",
-"text":"Bosnian",
-"storeViewCode":""
-},
-{
-"name":"Lao",
-"icon":"assets/images/country/lo.png",
-"code":"lo",
-"text":"Lao",
-"storeViewCode":""
-},
-{
-"name":"Slovak",
-"icon":"assets/images/country/sk.png",
-"code":"sk",
-"text":"Slovak",
-"storeViewCode":""
-},
-{
-"name":"Swahili",
-"icon":"assets/images/country/sw.png",
-"code":"sw",
-"text":"Swahili",
-"storeViewCode":""
-},
-{
-"name":"Chinese",
-"icon":"assets/images/country/zh.png",
-"code":"zh",
-"text":"Chinese",
-"storeViewCode":""
-},
-{
-"name":"Chinese (traditional)",
-"icon":"assets/images/country/zh.png",
-"code":"zh_TW",
-"text":"Chinese (traditional)",
-"storeViewCode":""
-},
-{
-"name":"Chinese (simplified)",
-"icon":"assets/images/country/zh.png",
-"code":"zh_CN",
-"text":"Chinese (simplified)",
-"storeViewCode":""
-},
-{
-"name":"Burmese",
-"icon":"assets/images/country/my.png",
-"code":"my",
-"text":"Burmese",
-"storeViewCode":""
-},
-{
-"name":"Albanian",
-"icon":"assets/images/country/sq.png",
-"code":"sq",
-"text":"Albanian",
-"storeViewCode":""
-}
+// {
+// "name":"Russian",
+// "icon":"assets/images/country/ru.png",
+// "code":"ru",
+// "text":"Русский",
+// "storeViewCode":"ru"
+// },
+// {
+// "name":"Indonesian",
+// "icon":"assets/images/country/id.png",
+// "code":"id",
+// "text":"Indonesian",
+// "storeViewCode":"id"
+// },
+// {
+// "name":"Japanese",
+// "icon":"assets/images/country/ja.png",
+// "code":"ja",
+// "text":"Japanese",
+// "storeViewCode":""
+// },
+// {
+// "name":"Korean",
+// "icon":"assets/images/country/ko.png",
+// "code":"ko",
+// "text":"Korean",
+// "storeViewCode":"ko"
+// },
+// {
+// "name":"Vietnamese",
+// "icon":"assets/images/country/vn.png",
+// "code":"vi",
+// "text":"Vietnam",
+// "storeViewCode":""
+// },
+// {
+// "name":"Romanian",
+// "icon":"assets/images/country/ro.png",
+// "code":"ro",
+// "text":"Romanian",
+// "storeViewCode":"ro"
+// },
+// {
+// "name":"Turkish",
+// "icon":"assets/images/country/tr.png",
+// "code":"tr",
+// "text":"Turkish",
+// "storeViewCode":"tr"
+// },
+// {
+// "name":"Italian",
+// "icon":"assets/images/country/it.png",
+// "code":"it",
+// "text":"Italian",
+// "storeViewCode":"it"
+// },
+// {
+// "name":"German",
+// "icon":"assets/images/country/de.png",
+// "code":"de",
+// "text":"German",
+// "storeViewCode":"de"
+// },
+// {
+// "name":"Portuguese",
+// "icon":"assets/images/country/pt.png",
+// "code":"pt",
+// "text":"Portuguese",
+// "storeViewCode":"pt"
+// },
+// {
+// "name":"Hungarian",
+// "icon":"assets/images/country/hu.png",
+// "code":"hu",
+// "text":"Hungarian",
+// "storeViewCode":"hu"
+// },
+// {
+// "name":"Hebrew",
+// "icon":"assets/images/country/he.png",
+// "code":"he",
+// "text":"Hebrew",
+// "storeViewCode":"he"
+// },
+// {
+// "name":"Thai",
+// "icon":"assets/images/country/th.png",
+// "code":"th",
+// "text":"Thai",
+// "storeViewCode":"th"
+// },
+// {
+// "name":"Dutch",
+// "icon":"assets/images/country/nl.png",
+// "code":"nl",
+// "text":"Dutch",
+// "storeViewCode":"nl"
+// },
+// {
+// "name":"Serbian",
+// "icon":"assets/images/country/sr.jpeg",
+// "code":"sr",
+// "text":"Serbian",
+// "storeViewCode":"sr"
+// },
+// {
+// "name":"Polish",
+// "icon":"assets/images/country/pl.png",
+// "code":"pl",
+// "text":"Polish",
+// "storeViewCode":"pl"
+// },
+// {
+// "name":"Persian",
+// "icon":"assets/images/country/fa.png",
+// "code":"fa",
+// "text":"Persian",
+// "storeViewCode":""
+// },
+// {
+// "name":"Ukrainian",
+// "icon":"assets/images/country/uk.png",
+// "code":"uk",
+// "text":"Ukrainian",
+// "storeViewCode":""
+// },
+// {
+// "name":"Bengali",
+// "icon":"assets/images/country/bn.png",
+// "code":"bn",
+// "text":"Bengali",
+// "storeViewCode":""
+// },
+// {
+// "name":"Tamil",
+// "icon":"assets/images/country/ta.png",
+// "code":"ta",
+// "text":"Tamil",
+// "storeViewCode":""
+// },
+// {
+// "name":"Kurdish",
+// "icon":"assets/images/country/ku.png",
+// "code":"ku",
+// "text":"Kurdish",
+// "storeViewCode":""
+// },
+// {
+// "name":"Czech",
+// "icon":"assets/images/country/cs.png",
+// "code":"cs",
+// "text":"Czech",
+// "storeViewCode":"cs"
+// },
+// {
+// "name":"Swedish",
+// "icon":"assets/images/country/sv.png",
+// "code":"sv",
+// "text":"Swedish",
+// "storeViewCode":""
+// },
+// {
+// "name":"Finland",
+// "icon":"assets/images/country/fi.png",
+// "code":"fi",
+// "text":"Finland",
+// "storeViewCode":""
+// },
+// {
+// "name":"Greek",
+// "icon":"assets/images/country/el.png",
+// "code":"el",
+// "text":"Greek",
+// "storeViewCode":""
+// },
+// {
+// "name":"Khmer",
+// "icon":"assets/images/country/km.png",
+// "code":"km",
+// "text":"Khmer",
+// "storeViewCode":""
+// },
+// {
+// "name":"Kannada",
+// "icon":"assets/images/country/kn.png",
+// "code":"kn",
+// "text":"Kannada",
+// "storeViewCode":""
+// },
+// {
+// "name":"Marathi",
+// "icon":"assets/images/country/mr.jpeg",
+// "code":"mr",
+// "text":"Marathi",
+// "storeViewCode":""
+// },
+// {
+// "name":"Malay",
+// "icon":"assets/images/country/ms.jpeg",
+// "code":"ms",
+// "text":"Malay",
+// "storeViewCode":""
+// },
+// {
+// "name":"Bosnian",
+// "icon":"assets/images/country/bs.png",
+// "code":"bs",
+// "text":"Bosnian",
+// "storeViewCode":""
+// },
+// {
+// "name":"Lao",
+// "icon":"assets/images/country/lo.png",
+// "code":"lo",
+// "text":"Lao",
+// "storeViewCode":""
+// },
+// {
+// "name":"Slovak",
+// "icon":"assets/images/country/sk.png",
+// "code":"sk",
+// "text":"Slovak",
+// "storeViewCode":""
+// },
+// {
+// "name":"Swahili",
+// "icon":"assets/images/country/sw.png",
+// "code":"sw",
+// "text":"Swahili",
+// "storeViewCode":""
+// },
+// {
+// "name":"Chinese",
+// "icon":"assets/images/country/zh.png",
+// "code":"zh",
+// "text":"Chinese",
+// "storeViewCode":""
+// },
+// {
+// "name":"Chinese (traditional)",
+// "icon":"assets/images/country/zh.png",
+// "code":"zh_TW",
+// "text":"Chinese (traditional)",
+// "storeViewCode":""
+// },
+// {
+// "name":"Chinese (simplified)",
+// "icon":"assets/images/country/zh.png",
+// "code":"zh_CN",
+// "text":"Chinese (simplified)",
+// "storeViewCode":""
+// },
+// {
+// "name":"Burmese",
+// "icon":"assets/images/country/my.png",
+// "code":"my",
+// "text":"Burmese",
+// "storeViewCode":""
+// },
+// {
+// "name":"Albanian",
+// "icon":"assets/images/country/sq.png",
+// "code":"sq",
+// "text":"Albanian",
+// "storeViewCode":""
+// }
 ],
 "unsupportedLanguages":["ku"],
 "paymentConfig":{
 "DefaultCountryISOCode":"QA",
-"DefaultStateISOCode":"",
+"DefaultStateISOCode":"QA",
 "EnableShipping":false,
 "EnableAddress":true,
 "EnableCustomerNote":true,
@@ -600,8 +607,8 @@ Map<String, dynamic> environment =
 "allowSearchingAddress":true,
 "GoogleApiKey":"AIzaSyDSNYVC-8DU9BTcyqkeN9c5pgVhwOBAvGg",
 "GuestCheckout":true,
-"EnableOnePageCheckout":false,
-"NativeOnePageCheckout":true,
+"EnableOnePageCheckout":true,
+"NativeOnePageCheckout":false,
 "CheckoutPageSlug":{
 "en":"checkout"
 },
@@ -662,7 +669,13 @@ Map<String, dynamic> environment =
 "production":false,
 "enabled":true
 },
-"defaultCountryShipping":[],
+"defaultCountryShipping":[
+      {
+"name":"Arabic",
+"icon":"assets/images/country/ar.png",
+"iosCode":"QA"
+}
+],
 "afterShip":{
 "api":"e2e9bae8-ee39-46a9-a084-781d0139274f",
 "tracking_url":"https://fluxstore.aftership.com"
@@ -756,41 +769,41 @@ Map<String, dynamic> environment =
 "version":"2"
 },
 "smartChat":[
+// {
+// "app":"firebase",
+// "imageData":"https://trello.com/1/cards/611a38c89ebde41ec7cf10e2/attachments/611a392cceb1b534aa92a83e/previews/611a392dceb1b534aa92a84d/download",
+// "description":"Realtime Chat"
+// },
 {
-"app":"firebase",
-"imageData":"https://trello.com/1/cards/611a38c89ebde41ec7cf10e2/attachments/611a392cceb1b534aa92a83e/previews/611a392dceb1b534aa92a84d/download",
-"description":"Realtime Chat"
-},
-{
-"app":"https://wa.me/849908854",
+"app":"https://wa.me/905345130437",
 "iconData":"whatsapp",
 "description":"WhatsApp"
 },
 {
-"app":"tel:8499999999",
+"app":"tel:905345130437",
 "iconData":"phone",
 "description":"Call Us"
 },
 {
-"app":"sms://8499999999",
+"app":"sms://905345130437",
 "iconData":"sms",
 "description":"Send SMS"
 },
-{
-"app":"https://tawk.to/chat/5d830419c22bdd393bb69888/default",
-"iconData":"whatsapp",
-"description":"Tawk Chat"
-},
-{
-"app":"http://m.me/inspireui",
-"iconData":"facebookMessenger",
-"description":"Facebook Chat"
-},
-{
-"app":"https://twitter.com/messages/compose?recipient_id=821597032011931648",
-"imageData":"https://trello.com/1/cards/611a38c89ebde41ec7cf10e2/attachments/611a38d026894f10dc1091c8/previews/611a38d126894f10dc1091d6/download",
-"description":"Twitter Chat"
-}
+// {
+// "app":"https://tawk.to/chat/5d830419c22bdd393bb69888/default",
+// "iconData":"whatsapp",
+// "description":"Tawk Chat"
+// },
+// {
+// "app":"http://m.me/inspireui",
+// "iconData":"facebookMessenger",
+// "description":"Facebook Chat"
+// },
+// {
+// "app":"https://twitter.com/messages/compose?recipient_id=821597032011931648",
+// "imageData":"https://trello.com/1/cards/611a38c89ebde41ec7cf10e2/attachments/611a38d026894f10dc1091c8/previews/611a38d126894f10dc1091d6/download",
+// "description":"Twitter Chat"
+// }
 ],
 "adminEmail":"admininspireui@gmail.com",
 "adminName":"InspireUI",
@@ -804,17 +817,25 @@ Map<String, dynamic> environment =
 "splashScreen":{
 "enable":true,
 "duration":2000,
-"type":"flare",
-"image":"assets/images/splashscreen.flr",
+"type":"static",
+"image":"assets/images/splashscreen.png",
 "animationName":"fluxstore"
 },
 "darkConfig":{
 "MainColor":"#3FC1BE",
 "logo":"https://i.imgur.com/99g2nLi.png"
 },
+// "lightConfig":{
+// "MainColor":"#3FC1BE",
+// "logo":"https://i.imgur.com/XhaKMqR.png"
+// },
 "lightConfig":{
-"MainColor":"#3FC1BE",
-"logo":"https://i.imgur.com/XhaKMqR.png"
+"MainColor":"ff91b375",
+"logo":"https://i.imgur.com/XhaKMqR.png",
+// "backgroundColor":"fffdfdf5",
+// "primaryColorLight":"ffbcf292",
+// "textColor":"ff000000",
+// "secondaryColor":"ff56624b"
 },
 "productCard":{
 "hidePrice":false,
