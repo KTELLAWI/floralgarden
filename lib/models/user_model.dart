@@ -154,7 +154,7 @@ class UserModel with ChangeNotifier {
   Future<void> saveUser(User? user) async {
     try {
       if (Services().firebase.isEnabled &&
-          kFluxStoreMV.contains(serverConfig['type'])) {
+          kfloralgardenMV.contains(serverConfig['type'])) {
         Services().firebase.saveUserToFirestore(user: user);
       }
 

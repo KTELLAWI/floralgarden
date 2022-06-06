@@ -219,7 +219,7 @@ class SettingScreenState extends State<SettingScreen>
   Widget renderVendorVacation() {
     var isVendor = user?.isVender ?? false;
 
-    if ((kFluxStoreMV.contains(serverConfig['type']) && !isVendor) ||
+    if ((kfloralgardenMV.contains(serverConfig['type']) && !isVendor) ||
         serverConfig['type'] != 'wcfm' ||
         !kVendorConfig['DisableNativeStoreManagement']) {
       return const SizedBox();
@@ -305,7 +305,7 @@ class SettingScreenState extends State<SettingScreen>
     String title;
     Widget trailing;
     Function() onTap;
-    var isMultiVendor = kFluxStoreMV.contains(serverConfig['type']);
+    var isMultiVendor = kfloralgardenMV.contains(serverConfig['type']);
     var subGeneralSetting = widget.subGeneralSetting != null
         ? ConfigurationUtils.loadSubGeneralSetting(widget.subGeneralSetting!)
         : kSubGeneralSetting;
@@ -1191,7 +1191,7 @@ class SettingScreenState extends State<SettingScreen>
                       //               )
                       //             : const Icon(Icons.face),
                       //         title: Text(
-                      //           user.name!.replaceAll('fluxstore', ''),
+                      //           user.name!.replaceAll('floralgarden', ''),
                       //           style: textStyle,
                       //         ),
                       //       ),
@@ -1254,7 +1254,7 @@ class SettingScreenState extends State<SettingScreen>
                             //     onTap: () {
                             //       if (!loggedIn) {
                             //         Navigator.of(
-                            //           App.fluxStoreNavigatorKey.currentContext!,
+                            //           App.floralgardenNavigatorKey.currentContext!,
                             //         ).pushNamed(RouteList.login);
                             //         return;
                             //       }
@@ -1263,7 +1263,7 @@ class SettingScreenState extends State<SettingScreen>
                             //       if (kLoginSetting['IsRequiredLogin'] ??
                             //           false) {
                             //         Navigator.of(
-                            //           App.fluxStoreNavigatorKey.currentContext!,
+                            //           App.floralgardenNavigatorKey.currentContext!,
                             //         ).pushNamedAndRemoveUntil(
                             //           RouteList.login,
                             //           (route) => false,
@@ -1323,7 +1323,7 @@ class SettingScreenState extends State<SettingScreen>
 
                           /// Render some extra menu for Vendor.
                           /// Currently support WCFM & Dokan. Will support WooCommerce soon.
-                          // if (kFluxStoreMV.contains(serverConfig['type']) &&
+                          // if (kfloralgardenMV.contains(serverConfig['type']) &&
                           //     (user?.isVender ?? false)) ...[
                           //   Services().widget.renderVendorOrder(context),
                           //   renderVendorVacation(),
@@ -1666,7 +1666,7 @@ class SettingScreenState extends State<SettingScreen>
                       //                           )
                       //                         : const Icon(Icons.face),
                       //                     title: Text(
-                      //                       user.name!.replaceAll('fluxstore', ''),
+                      //                       user.name!.replaceAll('floralgarden', ''),
                       //                       style: textStyle,
                       //                     ),
                       //                   ),
@@ -1726,7 +1726,7 @@ class SettingScreenState extends State<SettingScreen>
                       //                       onTap: () {
                       //                         if (!loggedIn) {
                       //                           Navigator.of(
-                      //                             App.fluxStoreNavigatorKey.currentContext!,
+                      //                             App.floralgardenNavigatorKey.currentContext!,
                       //                           ).pushNamed(RouteList.login);
                       //                           return;
                       //                         }
@@ -1735,7 +1735,7 @@ class SettingScreenState extends State<SettingScreen>
                       //                         if (kLoginSetting['IsRequiredLogin'] ??
                       //                             false) {
                       //                           Navigator.of(
-                      //                             App.fluxStoreNavigatorKey.currentContext!,
+                      //                             App.floralgardenNavigatorKey.currentContext!,
                       //                           ).pushNamedAndRemoveUntil(
                       //                             RouteList.login,
                       //                             (route) => false,
@@ -1791,7 +1791,7 @@ class SettingScreenState extends State<SettingScreen>
 
                       //                 /// Render some extra menu for Vendor.
                       //                 /// Currently support WCFM & Dokan. Will support WooCommerce soon.
-                      //                 if (kFluxStoreMV.contains(serverConfig['type']) &&
+                      //                 if (kfloralgardenMV.contains(serverConfig['type']) &&
                       //                     (user?.isVender ?? false)) ...[
                       //                   Services().widget.renderVendorOrder(context),
                       //                   renderVendorVacation(),
@@ -1856,7 +1856,7 @@ class SettingScreenState extends State<SettingScreen>
     Provider.of<UserModel>(context, listen: false).logout();
     
     if (kLoginSetting.isRequiredLogin ) {
-      Navigator.of(App.fluxStoreNavigatorKey.currentContext!)
+      Navigator.of(App.floralgardenNavigatorKey.currentContext!)
           .pushNamedAndRemoveUntil(
         RouteList.login,
         (route) => false,
@@ -2106,7 +2106,7 @@ class SettingScreenState extends State<SettingScreen>
 //   Widget renderVendorVacation() {
 //     var isVendor = user?.isVender ?? false;
 
-//     if ((kFluxStoreMV.contains(serverConfig['type']) && !isVendor) ||
+//     if ((kfloralgardenMV.contains(serverConfig['type']) && !isVendor) ||
 //         serverConfig['type'] != 'wcfm' ||
 //         !kVendorConfig['DisableNativeStoreManagement']) {
 //       return const SizedBox();
@@ -2192,7 +2192,7 @@ class SettingScreenState extends State<SettingScreen>
 //     String title;
 //     Widget trailing;
 //     Function() onTap;
-//     var isMultiVendor = kFluxStoreMV.contains(serverConfig['type']);
+//     var isMultiVendor = kfloralgardenMV.contains(serverConfig['type']);
 //     var subGeneralSetting = widget.subGeneralSetting != null
 //         ? ConfigurationUtils.loadSubGeneralSetting(widget.subGeneralSetting!)
 //         : kSubGeneralSetting;
@@ -2632,7 +2632,7 @@ class SettingScreenState extends State<SettingScreen>
 //                       )
 //                     : const Icon(Icons.face),
 //                 title: Text(
-//                   user.name!.replaceAll('fluxstore', ''),
+//                   user.name!.replaceAll('floralgarden', ''),
 //                   style: textStyle,
 //                 ),
 //               ),
@@ -2687,14 +2687,14 @@ class SettingScreenState extends State<SettingScreen>
 //                   onTap: () {
 //                     if (!loggedIn) {
 //                       Navigator.of(
-//                         App.fluxStoreNavigatorKey.currentContext!,
+//                         App.floralgardenNavigatorKey.currentContext!,
 //                       ).pushNamed(RouteList.login);
 //                       return;
 //                     }
 //                     Provider.of<UserModel>(context, listen: false).logout();
 //                     if (kLoginSetting.isRequiredLogin) {
 //                       Navigator.of(
-//                         App.fluxStoreNavigatorKey.currentContext!,
+//                         App.floralgardenNavigatorKey.currentContext!,
 //                       ).pushNamedAndRemoveUntil(
 //                         RouteList.login,
 //                         (route) => false,
@@ -2814,7 +2814,7 @@ class SettingScreenState extends State<SettingScreen>
 
 //                       /// Render some extra menu for Vendor.
 //                       /// Currently support WCFM & Dokan. Will support WooCommerce soon.
-//                       if (kFluxStoreMV.contains(serverConfig['type']) &&
+//                       if (kfloralgardenMV.contains(serverConfig['type']) &&
 //                           (user?.isVender ?? false)) ...[
 //                         Services().widget.renderVendorOrder(context),
 //                         renderVendorVacation(),
@@ -2870,7 +2870,7 @@ class SettingScreenState extends State<SettingScreen>
 //     Provider.of<CartModel>(context, listen: false).clearAddress();
 //     Provider.of<UserModel>(context, listen: false).logout();
 //     if (Services().widget.isRequiredLogin) {
-//       Navigator.of(App.fluxStoreNavigatorKey.currentContext!)
+//       Navigator.of(App.floralgardenNavigatorKey.currentContext!)
 //           .pushNamedAndRemoveUntil(
 //         RouteList.login,
 //         (route) => false,

@@ -36,7 +36,7 @@ Map<String, dynamic> environment =
 "EnableSkuSearch":true,
 "showStockStatus":true,
 "GridCount":3,
-"isCaching":false,
+"isCaching":true,
 "kIsResizeImage":false,
 "httpCache":true,
 "DefaultCurrency":{
@@ -213,9 +213,9 @@ Map<String, dynamic> environment =
 },
 "onBoardingData":[
 // {
-// "title":"Welcome to FluxStore",
+// "title":"Welcome to floralgarden",
 // "image":"assets/images/fogg-delivery-1.png",
-// "desc":"Fluxstore is on the way to serve you. "
+// "desc":"floralgarden is on the way to serve you. "
 // },
 // {
 // "title":"Connect Surrounding World",
@@ -632,11 +632,11 @@ Map<String, dynamic> environment =
 "production":false,
 "enableApplePay":true,
 "enableGooglePay":true,
-"merchantDisplayName":"FluxStore",
+"merchantDisplayName":"floralgarden",
 "merchantIdentifier":"merchant.com.inspireui.mstore.flutter",
 "merchantCountryCode":"US",
 "useV1":false,
-"returnUrl":"fluxstore://inspireui.com",
+"returnUrl":"floralgarden://inspireui.com",
 "enableManualCapture":false
 },
 "paypalConfig":{
@@ -678,7 +678,7 @@ Map<String, dynamic> environment =
 ],
 "afterShip":{
 "api":"e2e9bae8-ee39-46a9-a084-781d0139274f",
-"tracking_url":"https://fluxstore.aftership.com"
+"tracking_url":"https://floralgarden.aftership.com"
 },
 "productDetail":{
 "height":0.6,
@@ -819,7 +819,7 @@ Map<String, dynamic> environment =
 "duration":2000,
 "type":"static",
 "image":"assets/images/splashscreen.png",
-"animationName":"fluxstore"
+"animationName":"floralgarden"
 },
 "darkConfig":{
 "MainColor":"#3FC1BE",
@@ -990,7 +990,7 @@ Map<String, dynamic> environment =
 //     "EnableSyncCartFromWebsite": false,
 //     "EnableSyncCartToWebsite": false,
 
-//     /// Enable firebase to support FCM, realtime chat for Fluxstore MV
+//     /// Enable firebase to support FCM, realtime chat for floralgarden MV
 //     "EnableFirebase": true,
 
 //     /// ratio Product Image, default value is 1.2 = height / width
@@ -1130,9 +1130,9 @@ Map<String, dynamic> environment =
 //   /// ➡️ lib/common/onboarding.dart
 //   "onBoardingData": [
 //     {
-//       'title': 'Welcome to FluxStore',
+//       'title': 'Welcome to floralgarden',
 //       'image': 'assets/images/fogg-delivery-1.png',
-//       'desc': 'Fluxstore is on the way to serve you. '
+//       'desc': 'floralgarden is on the way to serve you. '
 //     },
 //     {
 //       'title': 'Connect Surrounding World',
@@ -1234,7 +1234,7 @@ Map<String, dynamic> environment =
 //     /// Domain is the domain name for your product.
 //     /// Let’s assume here that your product domain is “example.com”.
 //     /// Then you have to mention the domain name as : https://example.page.link.
-//     "uriPrefix": "https://fluxstoreinspireui.page.link",
+//     "uriPrefix": "https://floralgardeninspireui.page.link",
 //     //The link your app will open
 //     "link": "https://mstore.io/",
 //     //----------* Android Setting *----------//
@@ -1632,7 +1632,7 @@ Map<String, dynamic> environment =
 //     /// This config is same with checkout page slug in the website
 //     "CheckoutPageSlug": {"en": "checkout"},
 
-//     /// Enable Credit card payment (only available for Fluxstore Shopipfy)
+//     /// Enable Credit card payment (only available for floralgarden Shopipfy)
 //     "EnableCreditCard": false,
 
 //     /// Enable update order status to processing after checkout by COD on woo commerce
@@ -1662,11 +1662,11 @@ Map<String, dynamic> environment =
 //     "production": false,
 //     "enableApplePay": true,
 //     "enableGooglePay": true,
-//     "merchantDisplayName": "FluxStore",
+//     "merchantDisplayName": "floralgarden",
 //     "merchantIdentifier": "merchant.com.inspireui.mstore.flutter",
 //     "merchantCountryCode": "US",
 //     "useV1": false,
-//     "returnUrl": "fluxstore://inspireui.com",
+//     "returnUrl": "floralgarden://inspireui.com",
 
 //     /// Enable this automatically captures funds when the customer authorizes the payment.
 //     /// Disable will Place a hold on the funds when the customer authorizes the payment,
@@ -1719,7 +1719,7 @@ Map<String, dynamic> environment =
 //   /// config for after shipping
 //   "afterShip": {
 //     "api": "e2e9bae8-ee39-46a9-a084-781d0139274f",
-//     "tracking_url": "https://fluxstore.aftership.com"
+//     "tracking_url": "https://floralgarden.aftership.com"
 //   },
 
 //   /// Ref: https://support.inspireui.com/help-center/articles/3/25/16/google-map-address
@@ -1920,7 +1920,7 @@ Map<String, dynamic> environment =
 //     /// Disable multivendor checkout
 //     "DisableMultiVendorCheckout": false,
 
-//     /// If this is false, then when creating/modifying products in FluxStore Manager
+//     /// If this is false, then when creating/modifying products in floralgarden Manager
 //     /// The publish status will be removed.
 //     "DisablePendingProduct": false,
 
@@ -1931,7 +1931,7 @@ Map<String, dynamic> environment =
 //     "EnableAutoApplicationApproval": false
 //   },
 
-//   /// Enable Delivery Boy Management in FluxStore Manager(WCFM)
+//   /// Enable Delivery Boy Management in floralgarden Manager(WCFM)
 //   "deliveryConfig": {
 //     "DisableDeliveryManagement": false,
 //   },
@@ -1949,6 +1949,6 @@ Map<String, dynamic> environment =
 //     "image": "assets/images/splashscreen.flr",
 
 //     /// AnimationName's is used for 'rive' and 'flare' type
-//     "animationName": "fluxstore"
+//     "animationName": "floralgarden"
 //   }
 // };

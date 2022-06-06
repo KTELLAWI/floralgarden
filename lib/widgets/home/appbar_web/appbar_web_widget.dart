@@ -72,12 +72,12 @@ class _AppBarWebWidgetState extends State<AppBarWebWidget> {
   void _onTapSignUp() => NavigateTools.navigateRegister(context);
 
   void _onTapSignIn() => Navigator.of(
-        App.fluxStoreNavigatorKey.currentContext!,
+        App.floralgardenNavigatorKey.currentContext!,
       ).pushNamed(RouteList.login);
 
   void _onTapDownloadPage() => _onTapOpenWeb(kAdvanceConfig.downloadPageUrl);
 
-  void _onTapSearch() => Navigator.of(App.fluxStoreNavigatorKey.currentContext!)
+  void _onTapSearch() => Navigator.of(App.floralgardenNavigatorKey.currentContext!)
       .pushNamed(RouteList.homeSearch);
 
   void _onTapCart() => FluxNavigate.pushNamed(RouteList.cart);

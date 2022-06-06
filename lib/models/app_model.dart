@@ -77,7 +77,7 @@ class AppModel with ChangeNotifier {
     _langCode = lang ?? kAdvanceConfig.defaultLanguage;
 
     advertisement = AdvertisementConfig.fromJson(adConfig: kAdConfig);
-    vendorType = kFluxStoreMV.contains(serverConfig['type'])
+    vendorType = kfloralgardenMV.contains(serverConfig['type'])
         ? VendorType.multi
         : VendorType.single;
   }

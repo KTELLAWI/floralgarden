@@ -350,7 +350,7 @@ abstract class BaseServices {
           {dynamic page, String? lang, String? brandId}) async =>
       null;
 
-  ///----FLUXSTORE LISTING----///
+  ///----floralgarden LISTING----///
   Future<dynamic>? bookService({userId, value, message}) => null;
 
   Future<List<Product>>? getProductNearest(location) => null;

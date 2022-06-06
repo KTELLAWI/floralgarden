@@ -63,7 +63,7 @@
     <application
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon"
-        android:label="Fluxstore"
+        android:label="floralgarden"
         android:usesCleartextTraffic="true">
 
         <activity
@@ -116,7 +116,7 @@
 
                 <data
                     android:host="inspireui.com"
-                    android:scheme="fluxstore" />
+                    android:scheme="floralgarden" />
             </intent-filter>
         </activity>
 

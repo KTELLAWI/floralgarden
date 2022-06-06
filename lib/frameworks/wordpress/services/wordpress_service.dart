@@ -118,7 +118,7 @@ class WordPressService extends BaseServices {
       final user = jsonDecode['user'];
       return User.fromWordpressUser(user, cookie);
     } catch (e) {
-      //This error exception is about your Rest API is not config correctly so that not return the correct JSON format, please double check the document from this link https://docs.inspireui.com/fluxstore/woocommerce-setup/
+      //This error exception is about your Rest API is not config correctly so that not return the correct JSON format, please double check the document from this link https://docs.inspireui.com/floralgarden/woocommerce-setup/
       rethrow;
     }
   }
@@ -143,7 +143,7 @@ class WordPressService extends BaseServices {
       final user = jsonDecode['user'];
       return User.fromWordpressUser(user, cookie);
     } catch (e) {
-      //This error exception is about your Rest API is not config correctly so that not return the correct JSON format, please double check the document from this link https://docs.inspireui.com/fluxstore/woocommerce-setup/
+      //This error exception is about your Rest API is not config correctly so that not return the correct JSON format, please double check the document from this link https://docs.inspireui.com/floralgarden/woocommerce-setup/
       rethrow;
     }
   }
@@ -167,7 +167,7 @@ class WordPressService extends BaseServices {
       final user = jsonDecode['user'];
       return User.fromWordpressUser(user, cookie);
     } catch (e) {
-      //This error exception is about your Rest API is not config correctly so that not return the correct JSON format, please double check the document from this link https://docs.inspireui.com/fluxstore/woocommerce-setup/
+      //This error exception is about your Rest API is not config correctly so that not return the correct JSON format, please double check the document from this link https://docs.inspireui.com/floralgarden/woocommerce-setup/
       rethrow;
     }
   }
@@ -193,7 +193,7 @@ class WordPressService extends BaseServices {
       final user = jsonDecode['user'];
       return User.fromWordpressUser(user, cookie);
     } catch (e) {
-      //This error exception is about your Rest API is not config correctly so that not return the correct JSON format, please double check the document from this link https://docs.inspireui.com/fluxstore/woocommerce-setup/
+      //This error exception is about your Rest API is not config correctly so that not return the correct JSON format, please double check the document from this link https://docs.inspireui.com/floralgarden/woocommerce-setup/
       rethrow;
     }
   }
@@ -218,7 +218,7 @@ class WordPressService extends BaseServices {
         /// we may handle if Invalid cookie here
       }
     } catch (err) {
-      //This error exception is about your Rest API is not config correctly so that not return the correct JSON format, please double check the document from this link https://docs.inspireui.com/fluxstore/woocommerce-setup/
+      //This error exception is about your Rest API is not config correctly so that not return the correct JSON format, please double check the document from this link https://docs.inspireui.com/floralgarden/woocommerce-setup/
       rethrow;
     }
   }
@@ -285,7 +285,7 @@ class WordPressService extends BaseServices {
       printLog('🔥 Integration error:');
       printLog(err);
       printLog(trace);
-      //This error exception is about your Rest API is not config correctly so that not return the correct JSON format, please double check the document from this link https://docs.inspireui.com/fluxstore/woocommerce-setup/
+      //This error exception is about your Rest API is not config correctly so that not return the correct JSON format, please double check the document from this link https://docs.inspireui.com/floralgarden/woocommerce-setup/
       rethrow;
     }
   }
@@ -373,7 +373,7 @@ class WordPressService extends BaseServices {
       }
       return null;
     } catch (e) {
-      //This error exception is about your Rest API is not config correctly so that not return the correct JSON format, please double check the document from this link https://docs.inspireui.com/fluxstore/woocommerce-setup/
+      //This error exception is about your Rest API is not config correctly so that not return the correct JSON format, please double check the document from this link https://docs.inspireui.com/floralgarden/woocommerce-setup/
       rethrow;
     }
   }

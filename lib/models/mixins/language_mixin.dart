@@ -7,7 +7,7 @@ import '../app_model.dart';
 mixin LanguageMixin {
   String? get langCode => Config().isBuilder
       ? 'en'
-      : Provider.of<AppModel>(App.fluxStoreNavigatorKey.currentContext!,
+      : Provider.of<AppModel>(App.floralgardenNavigatorKey.currentContext!,
               listen: false)
           .langCode;
 }

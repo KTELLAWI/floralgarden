@@ -502,7 +502,7 @@ mixin ProductAddonsMixin {
                   onPressed: () {
                     Navigator.of(context).pop();
                     Navigator.of(
-                      App.fluxStoreNavigatorKey.currentContext!,
+                      App.floralgardenNavigatorKey.currentContext!,
                     ).pushNamed(RouteList.login);
                   },
                   child: Text(

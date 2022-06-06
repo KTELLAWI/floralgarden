@@ -1,6 +1,6 @@
 part of '../constants.dart';
 
-const kFluxStorePlatform = <String>[
+const kfloralgardenPlatform = <String>[
   'woo',
   'strapi',
   'shopify',
@@ -9,7 +9,7 @@ const kFluxStorePlatform = <String>[
   'magento',
 ];
 
-const kFluxStoreMV = <String>['dokan', 'wcfm'];
+const kfloralgardenMV = <String>['dokan', 'wcfm'];
 
 enum VendorType { single, multi }
 

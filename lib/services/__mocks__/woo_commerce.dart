@@ -39,7 +39,7 @@
 //        return categories;
 //      }
 //    } catch (e) {
-//      //This error exception is about your Rest API is not config correctly so that not return the correct JSON format, please double check the document from this link https://docs.inspireui.com/fluxstore/woocommerce-setup/
+//      //This error exception is about your Rest API is not config correctly so that not return the correct JSON format, please double check the document from this link https://docs.inspireui.com/floralgarden/woocommerce-setup/
 //      rethrow;
 //    }
 //  }
@@ -74,7 +74,7 @@
 //      }
 //      return list;
 //    } catch (e) {
-//      //This error exception is about your Rest API is not config correctly so that not return the correct JSON format, please double check the document from this link https://docs.inspireui.com/fluxstore/woocommerce-setup/
+//      //This error exception is about your Rest API is not config correctly so that not return the correct JSON format, please double check the document from this link https://docs.inspireui.com/floralgarden/woocommerce-setup/
 //      rethrow;
 //    }
 //  }
@@ -126,7 +126,7 @@
 //        return list;
 //      }
 //    } catch (e) {
-//      //This error exception is about your Rest API is not config correctly so that not return the correct JSON format, please double check the document from this link https://docs.inspireui.com/fluxstore/woocommerce-setup/
+//      //This error exception is about your Rest API is not config correctly so that not return the correct JSON format, please double check the document from this link https://docs.inspireui.com/floralgarden/woocommerce-setup/
 //      return [];
 //    }
 //  }

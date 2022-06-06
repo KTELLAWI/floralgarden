@@ -2,7 +2,7 @@ part of '../config.dart';
 
 class DefaultConfig {
   static String environment = '';
-  static String appName = 'Fluxstore';
+  static String appName = 'floralgarden';
   static bool enableRemoteConfigFirebase = false;
   static bool enableCrashAnalytics = false;
   static String defaultLanguage = '';
@@ -125,7 +125,7 @@ class DefaultConfig {
     'EnableSyncCartFromWebsite': true,
     'EnableSyncCartToWebsite': true,
 
-    /// Enable firebase to support FCM, realtime chat for Fluxstore MV
+    /// Enable firebase to support FCM, realtime chat for floralgarden MV
     'EnableFirebase': false,
 
     /// ratio Product Image, default value is 1.2 = height / width
@@ -222,9 +222,9 @@ class DefaultConfig {
   static Map oneSignalKey = {};
   static List onBoardingData = [
     {
-      'title': 'Welcome to FluxStore',
+      'title': 'Welcome to floralgarden',
       'image': 'assets/images/fogg-delivery-1.png',
-      'desc': 'Fluxstore is on the way to serve you. '
+      'desc': 'floralgarden is on the way to serve you. '
     },
     {
       'title': 'Connect Surrounding World',
@@ -326,7 +326,7 @@ class DefaultConfig {
     // Domain is the domain name for your product.
     // Let’s assume here that your product domain is “example.com”.
     // Then you have to mention the domain name as : https://example.page.link.
-    'uriPrefix': 'https://fluxstoreinspireui.page.link',
+    'uriPrefix': 'https://floralgardeninspireui.page.link',
     //The link your app will open
     'link': 'https://mstore.io/',
     //----------* Android Setting *----------//
@@ -400,7 +400,7 @@ class DefaultConfig {
     'enable': true,
     'type': 'flare',
     'image': 'assets/images/splashscreen.flr',
-    'animationName': 'fluxstore',
+    'animationName': 'floralgarden',
     'duration': 2000,
   };
   static Map colorOverrideConfig = {};

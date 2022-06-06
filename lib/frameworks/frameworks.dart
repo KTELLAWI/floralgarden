@@ -462,7 +462,7 @@ abstract class BaseFrameworks {
     );
   }
 
-  ///----- For FluxStore Listing -----///
+  ///----- For floralgarden Listing -----///
   /// render Booking History
   Widget renderBookingHistory(context) => const SizedBox();
 

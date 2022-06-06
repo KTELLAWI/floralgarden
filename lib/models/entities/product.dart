@@ -98,7 +98,7 @@ class Product {
 
   ///----VENDOR ADMIN----///
 
-  ///----FLUXSTORE LISTING----///
+  ///----floralgarden LISTING----///
 
   String? distance;
   Map? pureTaxonomies;
@@ -127,7 +127,7 @@ class Product {
   List<dynamic>? listingMenu = [];
   ListingSlots? slots;
 
-  ///----FLUXSTORE LISTING----///
+  ///----floralgarden LISTING----///
   Product(
       {String? id,
       String? sku,
@@ -994,7 +994,7 @@ class Product {
       'variations': variations?.map((e) => e.toJson()).toList(),
       'infors': infors.map((e) => e.toJson()).toList(),
 
-      ///----FluxStore Listing----///
+      ///----floralgarden Listing----///
       'distance': distance,
       'pureTaxonomies': pureTaxonomies,
       'reviews': reviews,
@@ -1100,7 +1100,7 @@ class Product {
       }).toList();
       type = json['type'];
 
-      ///----FluxStore Listing----///
+      ///----floralgarden Listing----///
 
       distance = json['distance'];
       pureTaxonomies = json['pureTaxonomies'];
@@ -1238,7 +1238,7 @@ class Product {
       inStock = json['availability'] == 'available';
       images = <String>[];
       if (id?.isNotEmpty ?? false) {
-        permalink = 'https://fluxstore/product/$id';
+        permalink = 'https://floralgarden/product/$id';
       }
 
       if (json['images'] != null &&
@@ -1346,7 +1346,7 @@ class Product {
     return price;
   }
 
-  ///----FLUXSTORE LISTING----////
+  ///----floralgarden LISTING----////
   Product.fromListingJson(Map<String, dynamic> json) {
     try {
       id = Tools.getValueByKey(json, DataMapping().kProductDataMapping['id'])
@@ -1503,7 +1503,7 @@ class Product {
     }
   }
 
-  ///----FLUXSTORE LISTING----////
+  ///----floralgarden LISTING----////
 
   Product copyWith(
       {String? id,

@@ -131,7 +131,7 @@ class _LoginPageState extends BaseScreen<LoginScreen>
       Navigator.of(context).pop();
     } else {
       // When required login
-      await Navigator.of(App.fluxStoreNavigatorKey.currentContext!)
+      await Navigator.of(App.floralgardenNavigatorKey.currentContext!)
           .pushReplacementNamed(RouteList.dashboard);
     }
   }

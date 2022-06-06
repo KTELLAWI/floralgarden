@@ -31,7 +31,7 @@ class App extends StatefulWidget {
     required this.languageCode,
   });
 
-  static final GlobalKey<NavigatorState> fluxStoreNavigatorKey = GlobalKey();
+  static final GlobalKey<NavigatorState> floralgardenNavigatorKey = GlobalKey();
 
   @override
   State<StatefulWidget> createState() {
@@ -323,7 +323,7 @@ class AppState extends State<App>
               child: MaterialApp(
                 debugShowCheckedModeBanner: false,
                 locale: Locale(languageCode, countryCode),
-                navigatorKey: App.fluxStoreNavigatorKey,
+                navigatorKey: App.floralgardenNavigatorKey,
                 navigatorObservers: [
                   MyRouteObserver(
                       action: (screenName) =>
@@ -364,7 +364,7 @@ class AppState extends State<App>
     if (notification.additionalData?['dynamic_link'] != null) {
       var url = notification.additionalData!['dynamic_link'];
       await DynamicLinkService.handleDynamicLink(
-          url, App.fluxStoreNavigatorKey.currentContext!);
+          url, App.floralgardenNavigatorKey.currentContext!);
     }
     _notificationModel.saveMessage(notification);
   }

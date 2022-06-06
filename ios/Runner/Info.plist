@@ -6,7 +6,7 @@
 		<string>en</string>
 		<!--TODO: Change your app name -->
 		<key>CFBundleDisplayName</key>
-		<string>FluxStore</string>
+		<string>floralgarden</string>
 		<key>CFBundleExecutable</key>
 		<string>$(EXECUTABLE_NAME)</string>
 		<key>CFBundleIdentifier</key>
@@ -75,7 +75,7 @@
         <string>9def0493cb40104fa311ee9e1086d264</string>
 		<!--TODO: Change your facebook app name -->
 		<key>FacebookDisplayName</key>
-		<string>FluxStore</string>
+		<string>floralgarden</string>
 		<key>FirebaseAppDelegateProxyEnabled</key>
 		<true/>
 		<key>FirebaseScreenReportingEnabled</key>

@@ -38,7 +38,7 @@ const kMagentoPayments = [
 
 const apiPageSize = 20;
 
-///-----FLUXSTORE LISTING-----///
+///-----floralgarden LISTING-----///
 enum BookStatus { booked, unavailable, waiting, confirmed, cancelled, error }
 
 const kSizeLeftMenu = 250.0;

@@ -127,7 +127,7 @@ class ProductItem {
       //   }
       // }
 
-      /// For FluxStore Manager
+      /// For floralgarden Manager
       id = parsedJson['id'].toString();
       if (parsedJson['delivery_user'] != null) {
         deliveryUser = DeliveryUser.fromJson(parsedJson['delivery_user']);

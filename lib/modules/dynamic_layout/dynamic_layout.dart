@@ -75,7 +75,7 @@ class DynamicLayout extends StatelessWidget {
         return HeaderSearch(
           config: HeaderConfig.fromJson(config),
           onSearch: () {
-            Navigator.of(App.fluxStoreNavigatorKey.currentContext!)
+            Navigator.of(App.floralgardenNavigatorKey.currentContext!)
                 .pushNamed(RouteList.homeSearch);
           },
         );

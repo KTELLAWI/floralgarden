@@ -13716,7 +13716,7 @@
 			],
 			"animations": [
 				{
-					"name": "fluxstore",
+					"name": "floralgarden",
 					"fps": 60,
 					"duration": 2,
 					"isLooping": false,

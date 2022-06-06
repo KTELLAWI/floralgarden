@@ -458,7 +458,7 @@ class CartModelBigCommerce
 
   @override
   double? getShippingCost() {
-    var isMultiVendor = kFluxStoreMV.contains(serverConfig['type']);
+    var isMultiVendor = kfloralgardenMV.contains(serverConfig['type']);
     return isMultiVendor ? getShippingVendorCost() : super.getShippingCost();
   }
 

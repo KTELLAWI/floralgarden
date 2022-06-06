@@ -695,7 +695,7 @@ class Order {
         params['shipping'].removeWhere((key, value) => value == null);
       }
 
-      var isMultiVendor = kFluxStoreMV.contains(serverConfig['type']);
+      var isMultiVendor = kfloralgardenMV.contains(serverConfig['type']);
       if (isMultiVendor) {
         if (kPaymentConfig.enableShipping &&
             cartModel.selectedShippingMethods.isNotEmpty) {

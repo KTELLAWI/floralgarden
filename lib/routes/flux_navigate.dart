@@ -8,7 +8,7 @@ import '../models/index.dart' show Product, Category;
 /// Push screen on TabBar
 class FluxNavigate {
   static NavigatorState get _rootNavigator =>
-      Navigator.of(App.fluxStoreNavigatorKey.currentContext!);
+      Navigator.of(App.floralgardenNavigatorKey.currentContext!);
 
   static NavigatorState get _tabNavigator => Navigator.of(
       MainTabControlDelegate.getInstance().tabKey()!.currentContext!);

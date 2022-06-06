@@ -28,7 +28,7 @@ class BlogConfig {
   String? layout;
   String? name;
 
-  /// use for check blog in fluxstore
+  /// use for check blog in floralgarden
   bool hideTitle = false;
   bool hideAuthor = false;
   bool hideDate = false;

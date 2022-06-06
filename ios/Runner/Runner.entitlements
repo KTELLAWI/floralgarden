@@ -11,7 +11,7 @@
 	<key>com.apple.developer.associated-domains</key>
 	<array>
 		<string>applinks:inspireui.com</string>
-		<string>applinks:fluxstoreinspireui.page.link</string>
+		<string>applinks:floralgardeninspireui.page.link</string>
 	</array>
 	<key>com.apple.developer.in-app-payments</key>
 	<array>
