@@ -429,7 +429,7 @@ class SettingScreenState extends State<SettingScreen>
           //   topRight: Radius.circular(10)),
           //   side: BorderSide(width: 5, color: Colors.green)),
           child: Padding(
-            padding:const EdgeInsets.only(left:10),
+            padding:const EdgeInsets.only(left:10,right:10),
           //  child:
              // children: [
                 // Card(
@@ -472,7 +472,7 @@ class SettingScreenState extends State<SettingScreen>
                     // margin: const EdgeInsets.only(bottom: 2.0),
                     // elevation: 0,
                     child: Padding(
-            padding:const EdgeInsets.only(left:10),
+            padding:const EdgeInsets.only(left:10,right:10),
             child:
             GestureDetector(
                       onTap: () {
@@ -559,7 +559,7 @@ class SettingScreenState extends State<SettingScreen>
               //   margin: const EdgeInsets.only(bottom: 2.0),
               //   elevation: 0,
                 child:   Padding(
-            padding:const EdgeInsets.only(left:10),
+            padding:const EdgeInsets.only(left:10,right:10),
               child:  SwitchListTile(
                   secondary: Icon(
                     Provider.of<AppModel>(context).darkTheme
@@ -760,7 +760,7 @@ class SettingScreenState extends State<SettingScreen>
           //   topRight: Radius.circular(10)),
           //   side: BorderSide(width: 5, color: Colors.green)),
           child: Padding(
-            padding:const EdgeInsets.only(left:10),
+            padding:const EdgeInsets.only(left:10,right:10),
             child:
           
           ListTile(
