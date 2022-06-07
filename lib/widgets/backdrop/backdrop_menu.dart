@@ -421,7 +421,7 @@ class _BackdropMenuState extends State<BackdropMenu> {
               ),
             ),
 
-          ...renderLayout(),
+         // ...renderLayout(),
 
           if ((!Config().isListingType) ^ (Config().type == ConfigType.shopify))
             renderFilterSortBy(),
