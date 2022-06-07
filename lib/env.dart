@@ -36,9 +36,9 @@ Map<String, dynamic> environment =
 "EnableSkuSearch":true,
 "showStockStatus":true,
 "GridCount":3,
-"isCaching":false,
-"kIsResizeImage":false,
-"httpCache":false,
+"isCaching":true,
+"kIsResizeImage":true,
+"httpCache":true,
 "DefaultCurrency":{
 "symbol":"QAR",
 "decimalDigits":2,
@@ -180,20 +180,7 @@ Map<String, dynamic> environment =
 ]
 },
 "defaultSettings":[
-// "products",
-// "chat",
-
-"notifications",
-"language",
-"darkTheme",
-"wishlist",
-// "currencies",
-
-"order",
-// "point",
-"rating",
-// "privacy",
-// "about"
+"order"
 ],
 "loginSetting":{
 "IsRequiredLogin":false,

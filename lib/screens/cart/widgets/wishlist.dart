@@ -6,7 +6,7 @@ import '../../../generated/l10n.dart';
 import '../../../models/product_wish_list_model.dart';
 import '../../../modules/dynamic_layout/config/product_config.dart';
 import '../../../modules/dynamic_layout/helper/header_view.dart';
-import '../../../widgets/product/product_card_view.dart';
+import '../../../widgets/product/product_card_view2.dart';
 
 class WishList extends StatelessWidget {
   @override

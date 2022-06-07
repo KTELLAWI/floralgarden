@@ -7,7 +7,7 @@ import '../../../generated/l10n.dart';
 import '../../../models/index.dart' show AppModel, Product;
 import '../../../modules/dynamic_layout/config/product_config.dart';
 import '../../../services/index.dart';
-import '../../../widgets/product/product_card_view.dart';
+import '../../../widgets/product/product_card_view2.dart';
 
 class RelatedProduct extends StatefulWidget {
   final Product? product;

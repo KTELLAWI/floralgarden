@@ -107,7 +107,31 @@ class WishlistItem extends StatelessWidget {
                 arguments: product,
               );
             },
-            child: Row(
+            child:Container(
+              margin:const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                borderRadius:
+                    BorderRadius.circular(20),
+               // color:Colors.blue, //Theme.of(context).backgroundColor,
+               color: Colors.white,//!isDarkTheme ? Colors.white :Theme.of(context).backgroundColor,//Theme.of(context).colorScheme.secondary,//Colors.transparent,
+                    border: Border.all(
+                    color:Colors.white,//const Color(0xff05dae5),
+                    width: 2,
+                  ),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color(0xff91b375),//Colors.black,
+                    offset: Offset(2.0, 2.0), 
+                    //offset: Offset(1.0, 1.8), //(x,y)
+                    blurRadius: 5.0,
+                  ),
+                ],
+              ),
+              child:
+              
+            
+            
+             Row(
               key: ValueKey(product.id),
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -183,9 +207,10 @@ class WishlistItem extends StatelessWidget {
                 ),
               ],
             ),
+          ),//container
           ),
           const SizedBox(height: 10.0),
-          const Divider(color: kGrey200, height: 1),
+         // const Divider(color: kGrey200, height: 1),
           const SizedBox(height: 10.0),
         ]);
       },

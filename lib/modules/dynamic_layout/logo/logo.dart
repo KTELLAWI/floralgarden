@@ -89,27 +89,28 @@ class Logo extends StatelessWidget {
   }) : super(key: key);
 
   Widget renderLogo() {
-    if (config.image != null) {
-      if (config.image!.contains('http')) {
-        return SizedBox(
-          height: kSizeLogo - 10,
-          child: FluxImage(
-            imageUrl: config.image!,
-            height: kSizeLogo,
-            fit: BoxFit.contain,
-          ),
-        );
-      }
-      return Image.asset(
-        config.image!,
-        height: kSizeLogo,
-      );
-    }
+    // if (config.image != null) {
+    //   if (config.image!.contains('http')) {
+    //     return SizedBox(
+    //       height: kSizeLogo - 10,
+    //       child: FluxImage(
+    //         imageUrl: config.image!,
+    //         height: kSizeLogo,
+    //         fit: BoxFit.contain,
+    //       ),
+    //     );
+    //   }
+    //   return Image.asset(
+    //     config.image!,
+    //     height: kSizeLogo,
+    //   );
+    // }
 
     /// render from config to support dark/light theme
-    if (logo != null) {
+    //if (logo != null) 
+    //{
       return FluxImage(imageUrl: logo!, height: kSizeLogo);
-    }
+   // }
 
     return Container();
   }

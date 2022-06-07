@@ -381,31 +381,8 @@ class SettingScreenState extends State<SettingScreen>
 //               );
 //           break;
 //         }
-      case 'wishlist':
-        {
-          final wishListCount =
-              Provider.of<ProductWishListModel>(context, listen: false)
-                  .products
-                  .length;
-          trailing = Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              if (wishListCount > 0)
-                Text(
-                  '$wishListCount ${S.of(context).items}',
-                  style: TextStyle(
-                      fontSize: 14, color: Theme.of(context).primaryColor),
-                ),
-              const SizedBox(width: 5),
-              const Icon(Icons.arrow_forward_ios, size: 18, color: kGrey600)
-            ],
-          );
 
-          title = S.of(context).myWishList;
-          icon = CupertinoIcons.heart;
-          onTap = () => Navigator.of(context).pushNamed(RouteList.wishlist);
-          break;
-        }
+      
       case 'notifications':
         {
           return Consumer<NotificationModel>(builder: (context, model, child) {
@@ -524,18 +501,46 @@ class SettingScreenState extends State<SettingScreen>
           onTap = () => Navigator.of(context).pushNamed(RouteList.language);
           break;
         }
-      // case 'currencies':
-      //   {
-      //     if (Config().isListingType) {
-      //       return Container();
-      //     }
-      //     icon = CupertinoIcons.money_dollar_circle;
-      //     title = S.of(context).currencies;
-      //     trailing =
-      //         const Icon(Icons.arrow_forward_ios, size: 18, color: kGrey600);
-      //     onTap = () => Navigator.of(context).pushNamed(RouteList.currencies);
-      //     break;
-      //   }
+      case 'currencies':
+        {
+          if (Config().isListingType) {
+            return Container();
+          }
+          icon = CupertinoIcons.money_dollar_circle;
+          title = S.of(context).currencies;
+          trailing =
+              const Icon(Icons.arrow_forward_ios, size: 18, color: kGrey600);
+          onTap = () => Navigator.of(context).pushNamed(RouteList.currencies);
+          break;
+        }
+
+      case 'wishlist':
+        {
+          
+          final wishListCount =
+              Provider.of<ProductWishListModel>(context, listen: false)
+                  .products
+                  .length;
+          trailing = 
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              if (wishListCount > 0)
+                Text(
+                  '$wishListCount ${S.of(context).items}',
+                  style: TextStyle(
+                      fontSize: 14, color: Theme.of(context).primaryColor),
+                ),
+              const SizedBox(width: 5),
+              const Icon(Icons.arrow_forward_ios, size: 18, color: kGrey600)
+            ],
+          );
+
+          title = S.of(context).myWishList;
+          icon = CupertinoIcons.heart;
+          onTap = () => Navigator.of(context).pushNamed(RouteList.wishlist);
+          break;
+        }
       case 'darkTheme':
  { 
    
@@ -742,7 +747,8 @@ class SettingScreenState extends State<SettingScreen>
           onTap = () {};
         }
     }
-    return Column(
+    return 
+    Column(
       children: [
         SizedBox(height:30),
         ClipRRect(
@@ -813,7 +819,7 @@ class SettingScreenState extends State<SettingScreen>
     super.build(context);
     var isDarkTheme = Provider.of<AppModel>(context, listen: false).darkTheme;
 
-    var settings = widget.settings ?? kDefaultSettings;
+    var settings = ["notifications","language","wishlist","darkTheme","order","rating"];//widget.settings ?? kDefaultSettings;
     var background = widget.background ?? kProfileBackground;
     const textStyle = TextStyle(fontSize: 16);
 
@@ -1348,6 +1354,7 @@ class SettingScreenState extends State<SettingScreen>
                             //   indent: 75,
                             //   //endIndent: 20,
                             // ),
+                            
                             ////////////////////////////////////////////
                              /// render list of dynamic menu
           //           /// this could be manage from the Fluxbuilder

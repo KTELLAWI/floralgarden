@@ -19,6 +19,7 @@ import '../widgets/general/index.dart';
 import 'maintab_delegate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:fstore/screens/posts/post_screen.dart';
 class SideBarMenu extends StatefulWidget {
   const SideBarMenu();
 
@@ -367,39 +368,40 @@ _launchURL(String url) async {
           //   ),
           //  onTap: () async => await Tools.launchURL("https://firebasestorage.googleapis.com/v0/b/mwjapp-468fa.appspot.com/o/mwjcatalog.pdf?alt=media&token=6c8163fa-313a-4d17-b7a3-0b1d0122a2bd"),
           //    ),
-             ListTile(
-            leading: Icon(
-             Icons.notifications_outlined,
-              size: 20,
-              color:!isDarkTheme ? Color(0xff91b375): Colors.white,
-            ),
-            title: Text(S.of(context).notifications,
-              // "الإشعارات",
-              style: GoogleFonts.almarai(
-                  textStyle: style
-                ),
-            ),
-            onTap: () {
-                        Navigator.of(context).pushNamed(RouteList.notify);
-                      },
+            //  ListTile(
+            // leading: Icon(
+            //  Icons.notifications_outlined,
+            //   size: 20,
+            //   color:!isDarkTheme ? Color(0xff91b375): Colors.white,
+            // ),
+            // title: Text(S.of(context).notifications,
+            //   // "الإشعارات",
+            //   style: GoogleFonts.almarai(
+            //       textStyle: style
+            //     ),
+            // ),
             // onTap: () {
-            //   pushNavigation(RouteList.notify );
-            // },
-             ),
+            //             Navigator.of(context).pushNamed(RouteList.notify);
+            //           },
+            // // onTap: () {
+            // //   pushNavigation(RouteList.notify );
+            // // },
+            //  ),
              ListTile(
             leading: Icon(
              Icons.favorite_border,
               size: 20,
               color:!isDarkTheme ?Color(0xff91b375) : Colors.white,
             ),
-            title: Text(S.of(context).favorite,
+            title: Text(S.of(context).language,
               // "المفضلة",
               style: GoogleFonts.almarai(
                   textStyle: style
                 ),
             ),
             onTap: () {
-              pushNavigation(RouteList.wishlist);
+              Navigator.of(context).pushNamed(RouteList.language);
+              //pushNavigation(RouteList.language);
             },
              ),
               ListTile(
@@ -415,7 +417,14 @@ _launchURL(String url) async {
                 ),
             ),
             onTap: () {
-               Navigator.push( context,MaterialPageRoute( builder: (context) => PrivacyScreen3(), ),);
+               Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => PostScreen(
+                        pageId: 1788,
+                        pageTitle: S.of(context).aboutUs),
+                  ));
+               //Navigator.push( context,MaterialPageRoute( builder: (context) => PrivacyScreen3(), ),);
             },
              ),
               ListTile(
@@ -431,7 +440,14 @@ _launchURL(String url) async {
                 ),
             ),
             onTap: () {
-               Navigator.push( context,MaterialPageRoute( builder: (context) => PrivacyScreen4(), ),);
+               Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => PostScreen(
+                        pageId:1790,//context.isRtl ? 1790 1788 : ,
+                        pageTitle: S.of(context).privacyPolicy),
+                  ));
+              // Navigator.push( context,MaterialPageRoute( builder: (context) => PrivacyScreen4(), ),);
             },
              ),
             //   ListTile(

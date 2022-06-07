@@ -129,7 +129,7 @@ class _BottomSheetSmartChatState extends State<BottomSheetSmartChat>
         option['app'],
       );
       return Align(
-        alignment: Alignment.bottomRight,
+        alignment: Alignment.bottomCenter,
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: FloatingActionButton(
@@ -143,7 +143,7 @@ class _BottomSheetSmartChatState extends State<BottomSheetSmartChat>
     }
 
     return Align(
-      alignment: Alignment.bottomRight,
+      alignment: Alignment.bottomCenter,
       child: Padding(
         padding: const EdgeInsets.all(14.0),
         child: ScaleTransition(
