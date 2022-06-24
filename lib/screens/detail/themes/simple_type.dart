@@ -94,7 +94,8 @@ class _SimpleLayoutState extends State<SimpleLayout>
     final widthHeight = size.height;
 
     final userModel = Provider.of<UserModel>(context, listen: false);
-    return Container(
+    return 
+    Container(
       color: Theme.of(context).backgroundColor,
       child: SafeArea(
         bottom: false,

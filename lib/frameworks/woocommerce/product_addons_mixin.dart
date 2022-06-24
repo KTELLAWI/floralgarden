@@ -128,9 +128,14 @@ mixin ProductAddonsMixin {
           ),
         ),
       );
-      listWidget.add(Column(
-        children: product.addOns!.map<Widget>((ProductAddons item) {
+      listWidget.add(
+        Column(
+        children:
+         product.addOns!.map<Widget>((ProductAddons item) {
           final selected = (selectedOptions[item.name!] ?? {});
+          final slection = selected.keys.join(', ');
+        // print(_getSelectedOptionsTitle(context, item, selected));
+          print(slection.contains("عبارتي الخاصة"));
           if (item.isHeadingType) {
             return Container(
               padding:
@@ -156,7 +161,13 @@ mixin ProductAddonsMixin {
             );
           }
 
-          return ExpansionTile(
+          return
+          //  Column(
+          //   children:[
+
+          //   ]
+          // )
+          ExpansionTile(
             trailing: const Icon(CupertinoIcons.plus_circle_fill, size: 25),
             title: ListTile(
               visualDensity: VisualDensity.compact,
@@ -190,7 +201,7 @@ mixin ProductAddonsMixin {
                       : const Text('')
                 ],
               ),
-              subtitle: selected.isNotEmpty
+              subtitle:selected.isNotEmpty
                   ? Text(
                       _getSelectedOptionsTitle(context, item, selected),
                       style: Theme.of(context).textTheme.caption!.copyWith(
@@ -324,7 +335,53 @@ mixin ProductAddonsMixin {
                                     checkColor: Colors.white,
                                     value: isSelected,
                                   ),
-                                if (item.isTextType)
+                                //   if (slection.contains("عبارتي الخاصة") )
+                                //  Expanded(   child: Padding(
+                                //       padding:
+                                //           const EdgeInsets.only(bottom: 8.0),
+                                //       child: TextField(
+                                //         onChanged: (text) {
+                                //           if (text.isEmpty) {
+                                //             selected.remove(item.name);
+                                //             onSelectProductAddons!(
+                                //                 selectedOptions:
+                                //                     selectedOptions);
+                                //             return;
+                                //           }
+
+                                //           if (selected[item.name] != null) {
+                                //             selected[item.name]!.label = text;
+                                //           } else {
+                                //             selected[item.name!] = AddonsOption(
+                                //                 parent: item.name,
+                                //                 type: item.type,
+                                //                 label: text,
+                                //                 price: item.price,
+                                //                 display: item.display,
+                                //                 fieldName: item.fieldName);
+                                //           }
+                                //           onSelectProductAddons!(
+                                //               selectedOptions: selectedOptions);
+                                //         },
+                                //         decoration: InputDecoration(
+                                //           contentPadding:
+                                //               const EdgeInsets.all(8),
+                                //           border: OutlineInputBorder(
+                                //             borderSide: BorderSide(
+                                //                 color: Theme.of(context)
+                                //                     .colorScheme
+                                //                     .secondary),
+                                //             borderRadius:
+                                //                 BorderRadius.circular(5),
+                                //           ),
+                                //           labelText: option.label,
+                                //         ),
+                                //         minLines: 1,
+                                //         maxLines: item.isShortTextType ? 1 : 4,
+                                //       ),
+                                //     ),
+                                //   ),
+                                if (item.isTextType )
                                   Expanded(
                                     child: Padding(
                                       padding:
@@ -401,10 +458,77 @@ mixin ProductAddonsMixin {
                           ),
                   );
                 }),
-              )
+              ),
+              
+              // (dynamic _) => onTap(),
+
+
+             // Text("fff"),
+            if (slection.contains("عبارتي الخاصة")) 
+             TextField(
+                                        onChanged: (text){
+                                          selected[item.name!] = AddonsOption(
+                                                parent: item.name,
+                                                type: item.type,
+                                                label: text,
+                                                price: item.price,
+                                                display:text, //item.display,
+                                                fieldName:text
+                                                 //item.fieldName
+                                                 );
+                                                 onSelectProductAddons!(
+                                               selectedOptions: selectedOptions);
+
+                                          //  selected.clear();
+                    //  selected[option.label!] = option;
+                    //  print(selectedOptions);
+                    //   onSelectProductAddons!(selectedOptions: text);
+                    //   return;
+                                         // (dynamic _) => onTap();
+                                        },
+                                        // (text) {
+                                        //   if (text.isEmpty) {
+                                        //     selected.remove(item.name);
+                                        //     onSelectProductAddons!(
+                                        //         selectedOptions:
+                                        //             selectedOptions);
+                                        //     return;
+                                        //   }
+
+                                        //   if (selected[item.name] != null) {
+                                        //     selected[item.name]!.label = text;
+                                        //   } else {
+                                        //     selected[item.name!] = AddonsOption(
+                                        //         parent: item.name,
+                                        //         type: item.type,
+                                        //         label: text,
+                                        //         price: item.price,
+                                        //         display: item.display,
+                                        //         fieldName: item.fieldName);
+                                        //   }
+                                        //   onSelectProductAddons!(
+                                        //       selectedOptions: selectedOptions);
+                                        // },
+                                        decoration: InputDecoration(
+                                          contentPadding:
+                                              const EdgeInsets.all(8),
+                                          border: OutlineInputBorder(
+                                            borderSide: BorderSide(
+                                                color: Theme.of(context)
+                                                    .colorScheme
+                                                    .secondary),
+                                            borderRadius:
+                                                BorderRadius.circular(5),
+                                          ),
+                                          labelText: "أدخل العبارة هنا",//option.label,
+                                        ),
+                                        minLines: 1,
+                                        maxLines: item.isShortTextType ? 1 : 4,
+                                      ),  
             ],
           );
         }).toList(),
+        
       ));
     }
     return listWidget;
