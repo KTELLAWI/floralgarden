@@ -1,15 +1,15 @@
-# FluxStore WooCommerce
+# floralgarden WooCommerce
 - Document & Support Ticket: https://support.inspireui.com
 - Blog & Changelog: https://medium.com/@inspireui
 - Youtube video guide: http://youtube.com/inspireui
-- Website: https://fluxstore.app
+- Website: https://floralgarden.app
 - Company website: https://inspireui.com
 
 ---
 
 ## Download package included:
 - Flutter project: (open current folder by Android Studio or VS Code)
-- Figma design file: resource/Design/Fluxstore.fig
+- Figma design file: resource/Design/floralgarden.fig
 - Animate splashscreen file: resource/Design/splashscreen.riv (https://rive.app)
 - Firebase extension: resource/Firebase Functions
 - Magento extension: resource/Magento-extension
