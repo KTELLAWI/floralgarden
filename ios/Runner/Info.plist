@@ -28,7 +28,7 @@
 				<string>Editor</string>
 				<!--TODO: Change your site name -->
 				<key>CFBundleURLName</key>
-				<string>inspireui.com</string>
+				<string>floralgardenqatar.com</string>
 				<!--TODO: Change your facebook app id, must include fb -->
 				<key>CFBundleURLSchemes</key>
 				<array>
@@ -52,7 +52,7 @@
 				<!--TODO: Change it to your app bunndle id -->
 				<key>CFBundleURLSchemes</key>
 				<array>
-					<string>com.inspireui.mstore.flutter</string>
+					<string>online.digistacks.floralgarden</string>
 				</array>
 			</dict>
             <dict>
