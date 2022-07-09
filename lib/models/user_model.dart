@@ -125,14 +125,10 @@ class UserModel with ChangeNotifier {
     }
   }
 
-  Future<void> loginGoogle({Function? success, Function? fail, context}) async {
+Future<void> loginGoogle({Function? success, Function? fail, context}) async {
     try {
-      var googleSignIn = GoogleSignIn(scopes: ['email']);
-
-      /// Need to disconnect or cannot login with another account.
-      await googleSignIn.disconnect();
-
-      var res = await googleSignIn.signIn();
+      var _googleSignIn = GoogleSignIn(scopes: ['email']);
+      var res = await _googleSignIn.signIn();
 
       if (res == null) {
         fail!(S.of(context).loginCanceled);
@@ -150,6 +146,32 @@ class UserModel with ChangeNotifier {
       fail!(S.of(context).loginErrorServiceProvider(err.toString()));
     }
   }
+
+  // Future<void> loginGoogle({Function? success, Function? fail, context}) async {
+  //   try {
+  //     var googleSignIn = GoogleSignIn(scopes: ['email']);
+
+  //     /// Need to disconnect or cannot login with another account.
+  //     await googleSignIn.disconnect();
+
+  //     var res = await googleSignIn.signIn();
+
+  //     if (res == null) {
+  //       fail!(S.of(context).loginCanceled);
+  //     } else {
+  //       var auth = await res.authentication;
+  //       Services().firebase.loginFirebaseGoogle(token: auth.accessToken);
+  //       user = await _service.api.loginGoogle(token: auth.accessToken);
+  //       await saveUser(user);
+  //       success!(user);
+  //       notifyListeners();
+  //     }
+  //   } catch (err, trace) {
+  //     printLog(trace);
+  //     printLog(err);
+  //     fail!(S.of(context).loginErrorServiceProvider(err.toString()));
+  //   }
+  // }
 
   Future<void> saveUser(User? user) async {
     try {
