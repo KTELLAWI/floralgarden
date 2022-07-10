@@ -333,7 +333,7 @@ class DefaultConfig {
     'androidPackageName': 'online.digistacks.floralgarden',
     'androidAppMinimumVersion': 1,
     //----------* iOS Setting *----------//
-    'iOSBundleId': 'com.inspireui.mstore.flutter',
+    'iOSBundleId': 'online.digistacks.floralgarden',
     'iOSAppMinimumVersion': '1.0.1',
     'iOSAppStoreId': '1469772800'
   };

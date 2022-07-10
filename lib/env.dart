@@ -620,7 +620,7 @@ Map<String, dynamic> environment =
 "enableApplePay":true,
 "enableGooglePay":true,
 "merchantDisplayName":"floralgarden",
-"merchantIdentifier":"merchant.com.inspireui.mstore.flutter",
+"merchantIdentifier":"merchant.online.digistacks.floralgarden",
 "merchantCountryCode":"US",
 "useV1":false,
 "returnUrl":"floralgarden://inspireui.com",
@@ -1228,7 +1228,7 @@ Map<String, dynamic> environment =
 //     "androidPackageName": "online.digistacks.floralgarden",
 //     "androidAppMinimumVersion": 1,
 //     //----------* iOS Setting *----------//
-//     "iOSBundleId": "com.inspireui.mstore.flutter",
+//     "iOSBundleId": "online.digistacks.floralgarden",
 //     "iOSAppMinimumVersion": "1.0.1",
 //     "iOSAppStoreId": "1469772800"
 //   },
@@ -1650,7 +1650,7 @@ Map<String, dynamic> environment =
 //     "enableApplePay": true,
 //     "enableGooglePay": true,
 //     "merchantDisplayName": "floralgarden",
-//     "merchantIdentifier": "merchant.com.inspireui.mstore.flutter",
+//     "merchantIdentifier": "merchant.online.digistacks.floralgarden",
 //     "merchantCountryCode": "US",
 //     "useV1": false,
 //     "returnUrl": "floralgarden://inspireui.com",
