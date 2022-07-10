@@ -113,7 +113,7 @@ abstract class CustomOverlayState<T extends StatefulWidget>
                     children: [
                       buildSmartChatWidget(),
                       Services().getAudioWidget(),
-                      if (!Config().isBuilder)
+                     // if (!Config().isBuilder)
                         // Services().advertisement.getAdWidget(),
                     ],
                   ),
