@@ -36,9 +36,9 @@ Map<String, dynamic> environment =
 "EnableSkuSearch":true,
 "showStockStatus":true,
 "GridCount":3,
-"isCaching":true,
+"isCaching":false,
 "kIsResizeImage":true,
-"httpCache":true,
+"httpCache":false,
 "DefaultCurrency":{
 "symbol":"QAR",
 "decimalDigits":2,
